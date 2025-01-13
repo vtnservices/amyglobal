@@ -41,13 +41,13 @@
             padding: 10px;
             background: linear-gradient(45deg, rgb(50, 195, 108) 25%, gold 25%, gold 50%, rgb(50, 195, 108) 50%, rgb(50, 195, 108) 75%, gold 75%, gold 100%);
             background-size: 200% 200%;
-            animation: rotateBorder 2s linear infinite;
+            /* animation: rotateBorder 0.5s linear infinite; */
         }
 
         .simple-border img {
             border-radius: 50%;
             position: relative;
-            z-index: 1;
+            z-index: -1;
         }
 
         @keyframes rotateBorder {
@@ -67,7 +67,6 @@
         /* H1: Fade-in effect */
         #heading1 {
             position: relative;
-            top: -200px;
             animation: fadeIn 2s forwards;
         }
 
@@ -84,7 +83,6 @@
         /* H3: Background color blink with white text */
         #heading2 {
             position: relative;
-            top: -200px;
             animation: blinkBackground 1s infinite 0.5s;
             /* Starts after 0.5s */
             color: white;
@@ -117,6 +115,13 @@
                 background-color: purple;
             }
         }
+
+        @media (min-width: 992px) {
+        .heading-2 {
+            top: -200px;
+        }
+    }
+
     </style>
 </head>
 
@@ -188,8 +193,8 @@
                 </div> -->
                 <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
             </div>
-            <a href="javascript:void(0);" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block"
-                onclick="showImage()">WhatsApp Us</a>
+            <a href="javascript:void(0);" class="btn btn-primary rounded-0 py-4 px-lg-5" onclick="showImage()">WhatsApp
+                Us</a>
 
             <!-- Hidden image container -->
             <div id="imageModal"
@@ -233,10 +238,10 @@
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
-                                <h1 class="display-2 text-white animated slideInDown" id="heading1"
-                                    style="position: relative; top: -200px;">Leading Engineering Workshop</h1>
-                                <h2 class="fs-5 fw-medium mb-4 pb-3" id="heading2"
-                                    style="position: relative; top: -200px;">
+                                <h1 class="display-2 text-white animated slideInDown heading-2" id="heading1"
+                                    style="position: relative;">Leading Engineering Workshop</h1>
+                                <h2 class="fs-5 fw-medium mb-4 pb-3 heading-2" id="heading2"
+                                    style="position: relative;">
                                     With over 18 years of Experience</h2>
                                 <!-- <a href="" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft"
                                     style="position: relative; top: -100px;">Welcome</a> -->
@@ -252,10 +257,10 @@
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
-                                <h1 class="display-2 text-white animated slideInDown"
-                                    style="position: relative; top: -200px;">Leading Engineering Workshop</h1>
-                                <h2 class="fs-5 fw-medium mb-4 pb-3" id="heading2"
-                                    style="position: relative; top: -200px;">
+                                <h1 class="display-2 text-white animated slideInDown heading-2" id="heading1"
+                                    style="position: relative;">Leading Engineering Workshop</h1>
+                                <h2 class="fs-5 fw-medium mb-4 pb-3 heading-2" id="heading2"
+                                    style="position: relative;">
                                     With over 18 years of Experience</h2>
                             </div>
                         </div>
@@ -269,10 +274,10 @@
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
-                                <h1 class="display-2 text-white animated slideInDown"
-                                    style="position: relative; top: -200px;">Leading Engineering Workshop</h1>
-                                <h2 class="fs-5 fw-medium mb-4 pb-3" id="heading2"
-                                    style="position: relative; top: -200px;">
+                                <h1 class="display-2 text-white animated slideInDown heading-2" id="heading1"
+                                    style="position: relative;">Leading Engineering Workshop</h1>
+                                <h2 class="fs-5 fw-medium mb-4 pb-3 heading-2" id="heading2"
+                                    style="position: relative;">
                                     With over 18 years of Experience</h2>
                             </div>
                         </div>
@@ -286,10 +291,10 @@
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
-                                <h1 class="display-2 text-white animated slideInDown"
-                                    style="position: relative; top: -200px;">Leading Engineering Workshop</h1>
-                                <h2 class="fs-5 fw-medium mb-4 pb-3" id="heading2"
-                                    style="position: relative; top: -200px;">
+                                <h1 class="display-2 text-white animated slideInDown heading-2" id="heading1"
+                                    style="position: relative;">Leading Engineering Workshop</h1>
+                                <h2 class="fs-5 fw-medium mb-4 pb-3 heading-2" id="heading2"
+                                    style="position: relative;">
                                     With over 18 years of Experience</h2>
                             </div>
                         </div>
@@ -303,10 +308,10 @@
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
-                                <h1 class="display-2 text-white animated slideInDown"
-                                    style="position: relative; top: -200px;">Leading Engineering Workshop</h1>
-                                <h2 class="fs-5 fw-medium mb-4 pb-3" id="heading2"
-                                    style="position: relative; top: -200px;">
+                                <h1 class="display-2 text-white animated slideInDown heading-2" id="heading1"
+                                    style="position: relative;">Leading Engineering Workshop</h1>
+                                <h2 class="fs-5 fw-medium mb-4 pb-3 heading-2" id="heading2"
+                                    style="position: relative;">
                                     With over 18 years of Experience</h2>
                             </div>
                         </div>
@@ -614,8 +619,8 @@
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
                                 href="img/Acheivments (1).jpeg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
-                                    class="fa fa-link"></i></a>
+                            <!-- <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                    class="fa fa-link"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -627,8 +632,8 @@
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
                                 href="img/Acheivments (2).jpeg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
-                                    class="fa fa-link"></i></a>
+                            <!-- <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                    class="fa fa-link"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -640,8 +645,8 @@
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
                                 href="img/Acheivments (3).jpeg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
-                                    class="fa fa-link"></i></a>
+                            <!-- <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                    class="fa fa-link"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -653,8 +658,8 @@
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
                                 href="img/Acheivments (4).jpeg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
-                                    class="fa fa-link"></i></a>
+                            <!-- <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                    class="fa fa-link"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -666,8 +671,8 @@
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
                                 href="img/Acheivments (5).jpeg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
-                                    class="fa fa-link"></i></a>
+                            <!-- <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                    class="fa fa-link"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -679,8 +684,8 @@
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
                                 href="img/Acheivments (6).jpeg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
-                                    class="fa fa-link"></i></a>
+                            <!-- <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                    class="fa fa-link"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -694,8 +699,8 @@
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
                                 href="img/Acheivments (20).jpeg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
-                                    class="fa fa-link"></i></a>
+                            <!-- <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                    class="fa fa-link"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -707,8 +712,8 @@
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
                                 href="img/Acheivments (8).jpeg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
-                                    class="fa fa-link"></i></a>
+                            <!-- <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                    class="fa fa-link"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -720,8 +725,8 @@
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
                                 href="img/Acheivments (9).jpeg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
-                                    class="fa fa-link"></i></a>
+                            <!-- <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                    class="fa fa-link"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -733,8 +738,8 @@
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
                                 href="img/Acheivments (19).jpeg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
-                                    class="fa fa-link"></i></a>
+                            <!-- <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                    class="fa fa-link"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -746,8 +751,8 @@
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
                                 href="img/Acheivments (11).jpeg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
-                                    class="fa fa-link"></i></a>
+                            <!-- <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                    class="fa fa-link"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -759,8 +764,8 @@
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
                                 href="img/Acheivments (12).jpeg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
-                                    class="fa fa-link"></i></a>
+                            <!-- <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                    class="fa fa-link"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -774,8 +779,8 @@
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
                                 href="img/Acheivments (13).jpeg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
-                                    class="fa fa-link"></i></a>
+                            <!-- <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                    class="fa fa-link"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -787,8 +792,8 @@
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
                                 href="img/Acheivments (14).jpeg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
-                                    class="fa fa-link"></i></a>
+                            <!-- <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                    class="fa fa-link"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -800,8 +805,8 @@
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
                                 href="img/Acheivments (15).jpeg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
-                                    class="fa fa-link"></i></a>
+                            <!-- <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                    class="fa fa-link"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -813,8 +818,8 @@
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
                                 href="img/Acheivments (16).jpeg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
-                                    class="fa fa-link"></i></a>
+                            <!-- <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                    class="fa fa-link"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -826,8 +831,8 @@
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
                                 href="img/Acheivments (17).jpeg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
-                                    class="fa fa-link"></i></a>
+                            <!-- <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                    class="fa fa-link"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -839,8 +844,8 @@
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
                                 href="img/Acheivments (18).jpeg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
-                                    class="fa fa-link"></i></a>
+                            <!-- <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                    class="fa fa-link"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -866,17 +871,20 @@
                     <div class="testimonial-img position-relative mx-3">
                         <img class="img-fluid rounded-circle simple-border" src="img/clients (3).png">
                     </div>
+                </div>
+                <div class="testimonial-item text-center d-flex justify-content-center align-items-center">
                     <div class="testimonial-img position-relative mx-3">
                         <img class="img-fluid rounded-circle simple-border" src="img/clients (4).png">
                     </div>
                     <div class="testimonial-img position-relative mx-3">
                         <img class="img-fluid rounded-circle simple-border" src="img/clients (5).png">
                     </div>
-                </div>
-                <div class="testimonial-item text-center d-flex justify-content-center align-items-center">
+
                     <div class="testimonial-img position-relative mx-3">
                         <img class="img-fluid rounded-circle simple-border" src="img/clients (6).png">
                     </div>
+                </div>
+                <div class="testimonial-item text-center d-flex justify-content-center align-items-center">
                     <div class="testimonial-img position-relative mx-3">
                         <img class="img-fluid rounded-circle simple-border" src="img/clients (7).png">
                     </div>
@@ -993,6 +1001,9 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <!-- <script>
+        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="lAcO5yp3gchIrUh2hTbL1";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    </script> -->
 </body>
 
 </html>
